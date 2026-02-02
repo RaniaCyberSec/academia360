@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Optimisé -->
+    <title>Formations Qualiopi & Qualité | Academia360°</title>
+    <meta name="description" content="Catalogue complet des formations Qualiopi, Management Qualité et Ingénierie Pédagogique. Programmes intra-entreprise et sur-mesure pour vos équipes à partir de 450€ HT/jour.">
+    
+    <!-- Canonical Corrigé -->
+    <link rel="canonical" href="https://academia360.fr/formations.html  ">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Formations Qualiopi & Qualité | Academia360°">
+    <meta property="og:description" content="Formations pratiques et certifiantes pour monter en compétence sur Qualiopi, le management qualité et l'ingénierie pédagogique.">
+    <meta property="og:url" content="https://academia360.fr/formations.html  ">
+    <meta property="og:image" content="https://academia360.fr/resources/og-image-formations.jpg  ">
+    <meta property="og:site_name" content="Academia360° Expert Qualiopi">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Formations Qualiopi & Qualité | Academia360°">
+    <meta name="twitter:description" content="Découvrez nos programmes de formation sur-mesure pour la certification Qualiopi.">
+    <meta name="twitter:image" content="https://academia360.fr/resources/og-image-formations.jpg  ">
+    
+    <!-- Fonts avec Optimisation -->
+    <link rel="preconnect" href="https://fonts.googleapis.com  ">
+    <link rel="preconnect" href="https://fonts.gstatic.com  " crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300  ;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org Course List -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org  ",
+        "@type": "ItemList",
+        "itemListElement": [
+            {
+                "@type": "Course",
+                "name": "Qualiopi Découverte",
+                "description": "Introduction complète au référentiel Qualiopi",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Academia360° Expert Qualiopi"
+                },
+                "duration": "P1D",
+                "educationalLevel": "Débutant",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "450.00",
+                    "priceCurrency": "EUR"
+                }
+            },
+            {
+                "@type": "Course",
+                "name": "Management Qualité Qualiopi",
+                "description": "Mise en place d'un système de management qualité",
+                "duration": "P2D",
+                "educationalLevel": "Avancé",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "900.00",
+                    "priceCurrency": "EUR"
+                }
+            },
+            {
+                "@type": "Course",
+                "name": "Ingénierie Pédagogique",
+                "description": "Conception de formations efficaces et engageantes",
+                "duration": "P2D",
+                "educationalLevel": "Intermédiaire",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "900.00",
+                    "priceCurrency": "EUR"
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Core Libraries -->
+    <script src="https://cdn.tailwindcss.com  "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js  "></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy-blue': '#1a365d',
+                        'blue-light': '#2d5aa0',
+                        'orange-energy': '#ed8936',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        :root {
+            --navy-blue: #1a365d;
+            --blue-light: #2d5aa0;
+            --cream-white: #fafafa;
+            --orange-energy: #ed8936;
+            --gray-light: #718096;
+            --gray-dark: #2d3748;
+            --blue-pale: #e6fffa;
+            --orange-pale: #fff5f5;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--cream-white) 0%, #f7fafc 100%);
+            color: var(--gray-dark);
+            line-height: 1.6;
+        }
+        
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .formations-hero {
+            background: linear-gradient(135deg, var(--navy-blue) 0%, var(--blue-light) 100%);
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, var(--navy-blue) 0%, var(--orange-energy) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .bg-navy-blue .gradient-text,
+        .formations-hero .gradient-text {
+            background: linear-gradient(135deg, #ffffff 0%, var(--orange-energy) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--navy-blue) 0%, var(--blue-light) 100%);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 24px rgba(26, 54, 93, 0.3);
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(26, 54, 93, 0.4);
+        }
+        
+        .btn-secondary {
+            background: var(--orange-energy);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 8px 24px rgba(237, 137, 54, 0.3);
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(237, 137, 54, 0.4);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--navy-blue);
+            border: 2px solid var(--navy-blue);
+            padding: 14px 30px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-outline:hover {
+            background: var(--navy-blue);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline-white {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 14px 30px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-outline-white:hover {
+            background: white;
+            color: var(--navy-blue);
+            transform: translateY(-2px);
+        }
+        
+        .nav-blur {
+            backdrop-filter: blur(20px);
+            background: rgba(250, 250, 250, 0.95);
+        }
+        
+        .filter-button {
+            background: var(--gray-light);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 4px;
+        }
+        
+        .filter-button:hover {
+            background: var(--orange-energy);
+        }
+        
+        .filter-button.active {
+            background: var(--orange-energy);
+            color: white;
+        }
+        
+        .formation-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-left: 6px solid var(--orange-energy);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .formation-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 48px rgba(0, 0, 0, 0.15);
+            border-left-color: var(--navy-blue);
+        }
+        
+        .formation-level {
+            background: var(--blue-pale);
+            color: var(--navy-blue);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        
+        .formation-duration {
+            background: var(--orange-pale);
+            color: var(--orange-energy);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        
+        .formation-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--navy-blue);
+            margin-top: auto;
+        }
+        
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 1px;
+            background: #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .calendar-day {
+            background: white;
+            padding: 12px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            min-height: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .calendar-day:hover {
+            background: var(--blue-pale);
+        }
+        
+        .calendar-day.has-session {
+            background: var(--orange-energy);
+            color: white;
+        }
+        
+        .calendar-day.has-session:hover {
+            background: var(--navy-blue);
+        }
+        
+        .calendar-header {
+            background: var(--navy-blue);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .search-bar {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 12px 20px;
+            font-size: 16px;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .search-bar:focus {
+            outline: none;
+            border-color: var(--orange-energy);
+            box-shadow: 0 0 0 3px rgba(237, 137, 54, 0.1);
+        }
+        
+        .bg-navy-blue {
+            background-color: var(--navy-blue);
+        }
+        
+        .text-blue-100 {
+            color: #dbeafe;
+        }
+        
+        .text-blue-200 {
+            color: #bfdbfe;
+        }
+        
+        /* Skip to content pour accessibilité */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--navy-blue);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Focus visible pour navigation au clavier */
+        a:focus-visible, button:focus-visible {
+            outline: 3px solid var(--orange-energy);
+            outline-offset: 2px;
+        }
+        
+        /* Notification toast */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 16px 24px;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            z-index: 1000;
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+            max-width: 350px;
+        }
+        
+        .notification.show {
+            transform: translateX(0);
+        }
+        
+        .notification.error {
+            background: #e53e3e;
+        }
+        
+        .notification.info {
+            background: var(--navy-blue);
+        }
+        
+        .mobile-menu {
+            display: none;
+        }
+        
+        .mobile-menu.active {
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .formation-card {
+                margin-bottom: 2rem;
+            }
+            
+            .calendar-day {
+                min-height: 50px;
+                padding: 8px;
+                font-size: 14px;
+            }
+            
+            .formations-hero {
+                min-height: auto;
+                padding-top: 8rem;
+                padding-bottom: 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Accessibilité : Skip to content -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- Navigation Standardisée -->
+    <nav class="fixed top-0 left-0 right-0 z-50 nav-blur border-b border-gray-200" role="navigation" aria-label="Navigation principale">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center space-x-3" aria-label="Academia360° - Retour à l'accueil">
+                    <img src="resources/Acasemia360ExpertQualiopi-logo.webp" alt="Logo Academia 360°" class="h-16 md:h-20 w-auto" width="80" height="80" loading="eager">
+                    <span class="font-playfair text-xl md:text-3xl font-bold gradient-text leading-tight">
+                        Academia 360°<br><span class="text-lg md:text-2xl">Expert Qualiopi</span>
+                    </span>
+                </a>
+                
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-navy-blue transition-colors">Accueil</a>
+                    <a href="about.html" class="text-gray-600 hover:text-navy-blue transition-colors">À Propos</a>
+                    <a href="services.html" class="text-gray-600 hover:text-navy-blue transition-colors">Services</a>
+                    <a href="formations.html" class="text-navy-blue font-medium border-b-2 border-orange-energy" aria-current="page">Formations</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-navy-blue transition-colors" target="_blank" rel="noopener noreferrer">Contact</a>
+                    <a href="contact.html" class="btn-primary text-sm py-3 px-6" target="_blank" rel="noopener noreferrer">
+                        Devis Gratuit
+                    </a>
+                </div>
+
+                <!-- Bouton Menu Mobile -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-600 hover:text-navy-blue focus:outline-none" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Menu Mobile -->
+            <div id="mobile-menu" class="mobile-menu md:hidden mt-4 pb-4 border-t border-gray-200 pt-4" role="menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-gray-600 hover:text-navy-blue transition-colors py-2">Accueil</a>
+                    <a href="about.html" class="text-gray-600 hover:text-navy-blue transition-colors py-2">À Propos</a>
+                    <a href="services.html" class="text-gray-600 hover:text-navy-blue transition-colors py-2">Services</a>
+                    <a href="formations.html" class="text-navy-blue font-medium py-2" aria-current="page">Formations</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-navy-blue transition-colors py-2" target="_blank" rel="noopener noreferrer">Contact</a>
+                    <a href="contact.html" class="btn-primary text-center mt-4" target="_blank" rel="noopener noreferrer">Devis Gratuit</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="formations-hero pt-24 pb-16 text-white relative overflow-hidden" aria-labelledby="hero-title">
+        <div class="absolute inset-0 bg-gradient-to-br from-navy-blue/50 to-transparent pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <h1 id="hero-title" class="font-playfair text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Nos Formations
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-blue-100 leading-relaxed">
+                Montez en compétences vos équipes avec nos programmes de formation Qualiopi et qualité en formation. 
+                Des contenus pratiques et adaptés à vos besoins.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#catalogue" class="btn-secondary text-center" onclick="document.getElementById('catalogue').scrollIntoView({behavior: 'smooth'}); return false;">
+                    Voir le Catalogue
+                </a>
+                <a href="contact.html" class="btn-outline-white text-center" target="_blank" rel="noopener noreferrer">
+                    Programme Sur-Mesure
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <!-- Catalogue Section -->
+        <section id="catalogue" class="py-20 bg-white" aria-labelledby="catalogue-title">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 id="catalogue-title" class="font-playfair text-4xl md:text-5xl font-bold mb-6 gradient-text">
+                        Catalogue de Formations
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Des programmes conçus pour répondre aux besoins spécifiques de vos équipes 
+                        dans le cadre de la certification Qualiopi et de l'amélioration continue.
+                    </p>
+                </div>
+                
+                <!-- Filtres -->
+                <div class="mb-12">
+                    <div class="flex flex-wrap justify-center mb-6" role="group" aria-label="Filtrer les formations">
+                        <button class="filter-button active" data-filter="all" aria-pressed="true">Toutes les Formations</button>
+                        <button class="filter-button" data-filter="qualiopi" aria-pressed="false">Qualiopi</button>
+                        <button class="filter-button" data-filter="qualite" aria-pressed="false">Qualité</button>
+                        <button class="filter-button" data-filter="pedagogie" aria-pressed="false">Pédagogie</button>
+                        <button class="filter-button" data-filter="management" aria-pressed="false">Management</button>
+                    </div>
+                    
+                    <div class="max-w-md mx-auto">
+                        <label for="search-formations" class="sr-only">Rechercher une formation</label>
+                        <input type="text" id="search-formations" placeholder="Rechercher une formation..." class="search-bar" aria-label="Rechercher dans le catalogue">
+                    </div>
+                </div>
+                
+                <!-- Grille de Formations -->
+                <div id="formations-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" role="list">
+                    <!-- Formation 1 -->
+                    <article class="formation-card" data-category="qualiopi" data-level="debutant" data-duration="1" role="listitem">
+                        <div class="formation-level">Qualiopi</div>
+                        <div class="formation-duration">1 jour</div>
+                        <h3 class="font-playfair text-xl font-bold mb-4">Qualiopi Découverte</h3>
+                        <p class="text-gray-600 mb-6 flex-1">
+                            Introduction complète au référentiel Qualiopi et aux enjeux de la certification. 
+                            Compréhension des 32 critères et des obligations réglementaires.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-2">Objectifs :</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Comprendre le contexte Qualiopi</li>
+                                <li>• Maîtriser les 7 critères du référentiel</li>
+                                <li>• Identifier les exigences de conformité</li>
+                                <li>• Préparer la démarche de certification</li>
+                            </ul>
+                        </div>
+                        <div class="formation-price">450€ HT / jour</div>
+                        <a href="contact.html?formation=qualiopi-decouverte" class="btn-primary w-full mt-4 text-center" target="_blank" rel="noopener noreferrer">
+                            S'inscrire
+                        </a>
+                    </article>
+
+                    <!-- Formation 2 -->
+                    <article class="formation-card" data-category="qualiopi" data-level="avance" data-duration="2" role="listitem">
+                        <div class="formation-level">Qualiopi</div>
+                        <div class="formation-duration">2 jours</div>
+                        <h3 class="font-playfair text-xl font-bold mb-4">Management Qualité Qualiopi</h3>
+                        <p class="text-gray-600 mb-6 flex-1">
+                            Formation approfondie sur la mise en place d'un système de management de la qualité 
+                            conforme aux exigences Qualiopi. Outils et méthodes pratiques.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-2">Objectifs :</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Mettre en place les processus qualité</li>
+                                <li>• Définir les indicateurs de performance</li>
+                                <li>• Gérer les non-conformités</li>
+                                <li>• Optimiser l'amélioration continue</li>
+                            </ul>
+                        </div>
+                        <div class="formation-price">900€ HT / 2 jours</div>
+                        <a href="contact.html?formation=management-qualite" class="btn-primary w-full mt-4 text-center" target="_blank" rel="noopener noreferrer">
+                            S'inscrire
+                        </a>
+                    </article>
+
+                    <!-- Formation 3 -->
+                    <article class="formation-card" data-category="pedagogie" data-level="intermediaire" data-duration="2" role="listitem">
+                        <div class="formation-level">Pédagogie</div>
+                        <div class="formation-duration">2 jours</div>
+                        <h3 class="font-playfair text-xl font-bold mb-4">Ingénierie Pédagogique</h3>
+                        <p class="text-gray-600 mb-6 flex-1">
+                            Maîtrisez l'art de concevoir des formations efficaces et engageantes. 
+                            Méthodologies, outils et techniques pour optimiser vos parcours pédagogiques.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-2">Objectifs :</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Concevoir des parcours pédagogiques adaptatifs</li>
+                                <li>• Utiliser les technologies éducatives</li>
+                                <li>• Évaluer l'efficacité des formations</li>
+                                <li>• Personnaliser l'apprentissage</li>
+                            </ul>
+                        </div>
+                        <div class="formation-price">900€ HT / 2 jours</div>
+                        <a href="contact.html?formation=ingenierie-pedagogique" class="btn-primary w-full mt-4 text-center" target="_blank" rel="noopener noreferrer">
+                            S'inscrire
+                        </a>
+                    </article>
+
+                    <!-- Formation 4 -->
+                    <article class="formation-card" data-category="qualite" data-level="intermediaire" data-duration="1" role="listitem">
+                        <div class="formation-level">Qualité</div>
+                        <div class="formation-duration">1 jour</div>
+                        <h3 class="font-playfair text-xl font-bold mb-4">Outils de Suivi Qualité</h3>
+                        <p class="text-gray-600 mb-6 flex-1">
+                            Formation pratique sur les outils et indicateurs de suivi qualité en formation professionnelle. 
+                            Tableaux de bord, questionnaires et analyse des résultats.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-2">Objectifs :</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Maîtriser les outils de mesure qualité</li>
+                                <li>• Créer des tableaux de bord performants</li>
+                                <li>• Analyser les indicateurs de satisfaction</li>
+                                <li>• Mettre en place des actions correctives</li>
+                            </ul>
+                        </div>
+                        <div class="formation-price">450€ HT / jour</div>
+                        <a href="contact.html?formation=outils-suivi-qualite" class="btn-primary w-full mt-4 text-center" target="_blank" rel="noopener noreferrer">
+                            S'inscrire
+                        </a>
+                    </article>
+
+                    <!-- Formation 5 -->
+                    <article class="formation-card" data-category="management" data-level="intermediaire" data-duration="2" role="listitem">
+                        <div class="formation-level">Management</div>
+                        <div class="formation-duration">2 jours</div>
+                        <h3 class="font-playfair text-xl font-bold mb-4">Management d'Équipe Pédagogique</h3>
+                        <p class="text-gray-600 mb-6 flex-1">
+                            Développez vos compétences en management pour diriger efficacement vos équipes pédagogiques. 
+                            Leadership, motivation et gestion des compétences.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-2">Objectifs :</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Développer le leadership pédagogique</li>
+                                <li>• Gérer les compétences de l'équipe</li>
+                                <li>• Motiver et fédérer les formateurs</li>
+                                <li>• Mettre en place la gestion des performances</li>
+                            </ul>
+                        </div>
+                        <div class="formation-price">900€ HT / 2 jours</div>
+                        <a href="contact.html?formation=management-equipe" class="btn-primary w-full mt-4 text-center" target="_blank" rel="noopener noreferrer">
+                            S'inscrire
+                        </a>
+                    </article>
+
+                    <!-- Formation 6 -->
+                    <article class="formation-card" data-category="qualiopi" data-level="avance" data-duration="3" role="listitem">
+                        <div class="formation-level">Qualiopi</div>
+                        <div class="formation-duration">3 jours</div>
+                        <h3 class="font-playfair text-xl font-bold mb-4">Préparation à l'Audit Qualiopi</h3>
+                        <p class="text-gray-600 mb-6 flex-1">
+                            Formation intensive pour préparer votre équipe à l'audit Qualiopi. Simulation d'audit, 
+                            questions fréquentes et stratégies de réussite.
+                        </p>
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-2">Objectifs :</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>• Comprendre le déroulement de l'audit</li>
+                                <li>• Préparer les réponses aux questions</li>
+                                <li>• Gérer le stress et la communication</li>
+                                <li>• Anticiper les pièges et difficultés</li>
+                            </ul>
+                        </div>
+                        <div class="formation-price">1 350€ HT / 3 jours</div>
+                        <a href="contact.html?formation=preparation-audit" class="btn-primary w-full mt-4 text-center" target="_blank" rel="noopener noreferrer">
+                            S'inscrire
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calendrier des Sessions (Avril 2026) -->
+        <section class="py-20 bg-gray-50" aria-labelledby="calendrier-title">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 id="calendrier-title" class="font-playfair text-4xl md:text-5xl font-bold mb-6 gradient-text">
+                        Calendrier des Sessions
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Découvrez nos prochaines sessions de formation et inscrivez-vous en ligne. 
+                        Des sessions régulières en présentiel et à distance.
+                    </p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Calendrier Avril 2026 -->
+                    <div>
+                        <h3 class="font-playfair text-2xl font-bold mb-6">Avril 2026</h3>
+                        <div class="calendar-grid" role="region" aria-label="Calendrier des formations">
+                            <div class="calendar-day calendar-header" role="columnheader">Lun</div>
+                            <div class="calendar-day calendar-header" role="columnheader">Mar</div>
+                            <div class="calendar-day calendar-header" role="columnheader">Mer</div>
+                            <div class="calendar-day calendar-header" role="columnheader">Jeu</div>
+                            <div class="calendar-day calendar-header" role="columnheader">Ven</div>
+                            <div class="calendar-day calendar-header" role="columnheader">Sam</div>
+                            <div class="calendar-day calendar-header" role="columnheader">Dim</div>
+                            
+                            <!-- Avril 2026 commence un Mercredi -->
+                            <!-- Semaine 1 (Mars fin) -->
+                            <div class="calendar-day" role="gridcell"></div>
+                            <div class="calendar-day" role="gridcell"></div>
+                            <div class="calendar-day" role="gridcell">1</div>
+                            <div class="calendar-day has-session" role="gridcell" tabindex="0" aria-label="Session Qualiopi Découverte le 2 avril">
+                                2
+                                <small>Qualiopi Découverte</small>
+                            </div>
+                            <div class="calendar-day" role="gridcell">3</div>
+                            <div class="calendar-day" role="gridcell">4</div>
+                            <div class="calendar-day" role="gridcell">5</div>
+                            
+                            <!-- Semaine 2 -->
+                            <div class="calendar-day" role="gridcell">6</div>
+                            <div class="calendar-day" role="gridcell">7</div>
+                            <div class="calendar-day has-session" role="gridcell" tabindex="0" aria-label="Session Management Qualité le 8 avril">
+                                8
+                                <small>Management</small>
+                            </div>
+                            <div class="calendar-day has-session" role="gridcell" tabindex="0" aria-label="Session Management Qualité le 9 avril">
+                                9
+                                <small>Management</small>
+                            </div>
+                            <div class="calendar-day" role="gridcell">10</div>
+                            <div class="calendar-day" role="gridcell">11</div>
+                            <div class="calendar-day" role="gridcell">12</div>
+                            
+                            <!-- Semaine 3 -->
+                            <div class="calendar-day" role="gridcell">13</div>
+                            <div class="calendar-day has-session" role="gridcell" tabindex="0" aria-label="Session Ingénierie Pédagogique le 14 avril">
+                                14
+                                <small>Ingénierie</small>
+                            </div>
+                            <div class="calendar-day has-session" role="gridcell" tabindex="0" aria-label="Session Ingénierie Pédagogique le 15 avril">
+                                15
+                                <small>Ingénierie</small>
+                            </div>
+                            <div class="calendar-day" role="gridcell">16</div>
+                            <div class="calendar-day" role="gridcell">17</div>
+                            <div class="calendar-day" role="gridcell">18</div>
+                            <div class="calendar-day" role="gridcell">19</div>
+                            
+                            <!-- Semaine 4 -->
+                            <div class="calendar-day" role="gridcell">20</div>
+                            <div class="calendar-day" role="gridcell">21</div>
+                            <div class="calendar-day has-session" role="gridcell" tabindex="0" aria-label="Session Outils de Suivi Qualité le 22 avril">
+                                22
+                                <small>Outils Qualité</small>
+                            </div>
+                            <div class="calendar-day" role="gridcell">23</div>
+                            <div class="calendar-day" role="gridcell">24</div>
+                            <div class="calendar-day" role="gridcell">25</div>
+                            <div class="calendar-day" role="gridcell">26</div>
+                            
+                            <!-- Semaine 5 -->
+                            <div class="calendar-day has-session" role="gridcell" tabindex="0" aria-label="Session Management Équipe le 27 avril">
+                                27
+                                <small>Management Équipe</small>
+                            </div>
+                            <div class="calendar-day has-session" role="gridcell" tabindex="0" aria-label="Session Management Équipe le 28 avril">
+                                28
+                                <small>Management Équipe</small>
+                            </div>
+                            <div class="calendar-day" role="gridcell">29</div>
+                            <div class="calendar-day" role="gridcell">30</div>
+                            <div class="calendar-day" role="gridcell"></div>
+                            <div class="calendar-day" role="gridcell"></div>
+                            <div class="calendar-day" role="gridcell"></div>
+                        </div>
+                        
+                        <div class="mt-6 flex items-center justify-center space-x-6 text-sm">
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-orange-energy rounded mr-2" aria-hidden="true"></div>
+                                <span>Session programmée</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-gray-300 rounded mr-2" aria-hidden="true"></div>
+                                <span>Date disponible</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Prochaines Sessions -->
+                    <div>
+                        <h3 class="font-playfair text-2xl font-bold mb-6">Prochaines Sessions</h3>
+                        
+                        <div class="space-y-4">
+                            <article class="bg-white p-4 rounded-lg shadow-lg border-l-4 border-orange-energy">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold">Qualiopi Découverte</h4>
+                                    <time class="text-orange-energy font-semibold">2 Avr. 2026</time>
+                                </div>
+                                <p class="text-sm text-gray-600 mb-3">Introduction au référentiel Qualiopi</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-gray-500">1 jour - Présentiel Paris</span>
+                                    <a href="contact.html?formation=qualiopi-decouverte" class="btn-primary text-sm px-4 py-2 text-center" target="_blank" rel="noopener noreferrer">
+                                        S'inscrire
+                                    </a>
+                                </div>
+                            </article>
+                            
+                            <article class="bg-white p-4 rounded-lg shadow-lg border-l-4 border-navy-blue">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold">Management Qualité</h4>
+                                    <time class="text-orange-energy font-semibold">8-9 Avr. 2026</time>
+                                </div>
+                                <p class="text-sm text-gray-600 mb-3">Mettre en place un SMQ conforme Qualiopi</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-gray-500">2 jours - Présentiel Lyon</span>
+                                    <a href="contact.html?formation=management-qualite" class="btn-primary text-sm px-4 py-2 text-center" target="_blank" rel="noopener noreferrer">
+                                        S'inscrire
+                                    </a>
+                                </div>
+                            </article>
+                            
+                            <article class="bg-white p-4 rounded-lg shadow-lg border-l-4 border-orange-energy">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold">Ingénierie Pédagogique</h4>
+                                    <time class="text-orange-energy font-semibold">14-15 Avr. 2026</time>
+                                </div>
+                                <p class="text-sm text-gray-600 mb-3">Concevoir des formations efficaces</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-gray-500">2 jours - Distanciel</span>
+                                    <a href="contact.html?formation=ingenierie-pedagogique" class="btn-primary text-sm px-4 py-2 text-center" target="_blank" rel="noopener noreferrer">
+                                        S'inscrire
+                                    </a>
+                                </div>
+                            </article>
+                            
+                            <article class="bg-white p-4 rounded-lg shadow-lg border-l-4 border-navy-blue">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold">Outils de Suivi Qualité</h4>
+                                    <time class="text-orange-energy font-semibold">22 Avr. 2026</time>
+                                </div>
+                                <p class="text-sm text-gray-600 mb-3">Maîtriser les indicateurs qualité</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-gray-500">1 jour - Présentiel Paris</span>
+                                    <a href="contact.html?formation=outils-suivi-qualite" class="btn-primary text-sm px-4 py-2 text-center" target="_blank" rel="noopener noreferrer">
+                                        S'inscrire
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        
+                        <div class="mt-8 text-center">
+                            <a href="https://calendar.google.com/calendar/embed?src=contact%40academia360.fr&ctz=Europe%2FParis" target="_blank" rel="noopener noreferrer" class="btn-outline">
+                                Voir le Calendrier Complet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formations Personnalisées -->
+        <section class="py-20 bg-white" aria-labelledby="sur-mesure-title">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2 id="sur-mesure-title" class="font-playfair text-4xl md:text-5xl font-bold mb-6 gradient-text">
+                    Besoin d'une Formation Sur-Mesure ?
+                </h2>
+                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Je conçois des programmes de formation personnalisés selon vos besoins spécifiques, 
+                    vos contraintes et vos objectifs. Adaptation totale à votre contexte et vos équipes.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-12 text-left">
+                    <div class="bg-blue-pale p-6 rounded-xl">
+                        <h3 class="font-playfair text-xl font-bold mb-4">Avantages du Sur-Mesure</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Contenu adapté à vos besoins
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Planning flexible
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Modalités au choix (présentiel/distanciel)
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Suivi personnalisé
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Coût optimisé
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-orange-pale p-6 rounded-xl">
+                        <h3 class="font-playfair text-xl font-bold mb-4">Processus de Conception</h3>
+                        <ol class="space-y-2 text-gray-700">
+                            <li class="flex items-center">
+                                <span class="w-6 h-6 bg-orange-energy text-white rounded-full flex items-center justify-center text-sm font-bold mr-2" aria-hidden="true">1</span>
+                                Analyse de vos besoins
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-6 h-6 bg-orange-energy text-white rounded-full flex items-center justify-center text-sm font-bold mr-2" aria-hidden="true">2</span>
+                                Conception du programme
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-6 h-6 bg-orange-energy text-white rounded-full flex items-center justify-center text-sm font-bold mr-2" aria-hidden="true">3</span>
+                                Validation du contenu
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-6 h-6 bg-orange-energy text-white rounded-full flex items-center justify-center text-sm font-bold mr-2" aria-hidden="true">4</span>
+                                Organisation logistique
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-6 h-6 bg-orange-energy text-white rounded-full flex items-center justify-center text-sm font-bold mr-2" aria-hidden="true">5</span>
+                                Déroulement de la formation
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-6 h-6 bg-orange-energy text-white rounded-full flex items-center justify-center text-sm font-bold mr-2" aria-hidden="true">6</span>
+                                Suivi et évaluation
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                        Demander un Devis Personnalisé
+                    </a>
+                    <a href="brochure.html" class="btn-outline" target="_blank" rel="noopener noreferrer">
+                        Demander Brochure
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- CTA SECTION STANDARDISÉE (Identique aux autres pages) -->
+    <section class="py-20 bg-navy-blue text-white relative overflow-hidden" aria-labelledby="cta-title">
+        <!-- Décorations d'arrière-plan -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none" aria-hidden="true">
+            <div class="absolute top-10 left-10 w-32 h-32 bg-white rounded-full"></div>
+            <div class="absolute bottom-10 right-10 w-48 h-48 bg-orange-energy rounded-full"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <h2 id="cta-title" class="font-playfair text-4xl md:text-5xl font-bold mb-6 gradient-text">
+                Prêt à Démarrer votre Projet Qualiopi ?
+            </h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto text-blue-100">
+                Bénéficiez de notre expertise et de notre accompagnement personnalisé. 
+                Ensemble, nous mettrons en place les conditions de votre succès.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="contact.html" class="btn-secondary" target="_blank" rel="noopener noreferrer">
+                    Planifier une Consultation
+                </a>
+                <a href="services.html" class="btn-outline-white">
+                    Découvrir nos Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER STANDARDISÉ (Identique aux autres pages) -->
+    <footer class="bg-gray-800 text-white py-12" role="contentinfo">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="font-playfair text-2xl font-bold mb-4 gradient-text">
+                        Academia 360° Expert Qualiopi
+                    </div>
+                    <p class="text-gray-300 mb-6 max-w-md leading-relaxed">
+                        Spécialiste de l'accompagnement à la certification Qualiopi pour organismes de formation. 
+                        Plus de 15 ans d'expérience dans la formation professionnelle.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://x.com/academia360ex?s=21 " target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-orange-energy hover:bg-orange-energy hover:text-white transition-all duration-300" aria-label="Twitter (nouvelle fenêtre)">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/academia-360°-lyon/"  target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-orange-energy hover:bg-orange-energy hover:text-white transition-all duration-300" aria-label="LinkedIn (nouvelle fenêtre)">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <nav aria-label="Pied de page - Services">
+                    <h4 class="font-bold text-lg mb-4 text-orange-energy">Services</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="services.html#audit" class="hover:text-white transition-colors flex items-center"><span class="mr-2" aria-hidden="true">→</span>Audit Qualiopi</a></li>
+                        <li><a href="services.html#accompagnement" class="hover:text-white transition-colors flex items-center"><span class="mr-2" aria-hidden="true">→</span>Accompagnement</a></li>
+                        <li><a href="formations.html" class="hover:text-white transition-colors flex items-center"><span class="mr-2" aria-hidden="true">→</span>Formations</a></li>
+                        <li><a href="services.html#conformite" class="hover:text-white transition-colors flex items-center"><span class="mr-2" aria-hidden="true">→</span>Conformité</a></li>
+                    </ul>
+                </nav>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4 text-orange-energy">Contact</h4>
+                    <address class="space-y-3 text-gray-300 not-italic">
+                        <p class="flex items-center"><span class="mr-2" aria-hidden="true">📞</span> <a href="tel:+33699524418" class="hover:text-orange-energy transition-colors">06 99 52 44 18</a></p>
+                        <p class="flex items-center"><span class="mr-2" aria-hidden="true">📧</span> <a href="mailto:contact@academia360.fr" class="hover:text-orange-energy transition-colors">contact@academia360.fr</a></p>
+                        <p class="flex items-center"><span class="mr-2" aria-hidden="true">📍</span> Lyon, France</p>
+                        <p class="text-orange-energy font-semibold mt-4">Disponible 9h-18h</p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Academia360° Expert Qualiopi. Tous droits réservés. | 
+                <a href="mentions-legales.html" class="hover:text-orange-energy transition-colors">Mentions légales</a> | 
+                <a href="politique-confidentialite.html" class="hover:text-orange-energy transition-colors">Politique de confidentialité</a></p>
+                <p class="mt-2 text-gray-500">By Rania.B</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Container -->
+    <div id="notification-container"></div>
+
+    <script src="main.js"></script>
+    <script>
+        // Mobile menu toggle optimisé pour l'accessibilité
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Fermer le menu mobile si on clique en dehors
+        document.addEventListener('click', function(event) {
+            if (!mobileMenu.contains(event.target) && !mobileMenuBtn.contains(event.target) && mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Notification function
+        function showNotification(message, type = 'info') {
+            const container = document.getElementById('notification-container');
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.textContent = message;
+            
+            container.appendChild(notification);
+            
+            // Trigger animation
+            setTimeout(() => notification.classList.add('show'), 100);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => notification.remove(), 300);
+            }, 3000);
+        }
+
+        // Initialize formations page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filter functionality
+            const filterButtons = document.querySelectorAll('.filter-button');
+            const formationCards = document.querySelectorAll('.formation-card');
+            const searchInput = document.getElementById('search-formations');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        btn.setAttribute('aria-pressed', 'false');
+                    });
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    this.setAttribute('aria-pressed', 'true');
+                    
+                    const filter = this.dataset.filter;
+                    filterFormations(filter, searchInput.value);
+                });
+            });
+            
+            searchInput.addEventListener('input', function() {
+                const activeFilter = document.querySelector('.filter-button.active').dataset.filter;
+                filterFormations(activeFilter, this.value);
+            });
+            
+            function filterFormations(category, searchTerm) {
+                formationCards.forEach(card => {
+                    const cardCategory = card.dataset.category;
+                    const cardTitle = card.querySelector('h3').textContent.toLowerCase();
+                    const cardDescription = card.querySelector('p').textContent.toLowerCase();
+                    
+                    const matchesCategory = category === 'all' || cardCategory === category;
+                    const matchesSearch = searchTerm === '' || 
+                                        cardTitle.includes(searchTerm.toLowerCase()) ||
+                                        cardDescription.includes(searchTerm.toLowerCase());
+                    
+                    if (matchesCategory && matchesSearch) {
+                        card.style.display = 'flex';
+                        anime({
+                            targets: card,
+                            opacity: [0, 1],
+                            translateY: [20, 0],
+                            duration: 400,
+                            easing: 'easeOutQuad'
+                        });
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+            
+            // Animate formation cards on load
+            formationCards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            anime({
+                                targets: entry.target,
+                                opacity: [0, 1],
+                                translateY: [30, 0],
+                                duration: 600,
+                                easing: 'easeOutExpo',
+                                delay: index * 100
+                            });
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                });
+                
+                observer.observe(card);
+            });
+            
+            // Calendar interactions
+            const calendarDays = document.querySelectorAll('.calendar-day:not(.calendar-header)');
+            calendarDays.forEach(day => {
+                day.addEventListener('click', function() {
+                    if (this.classList.contains('has-session')) {
+                        showNotification('Cliquez sur "S\'inscrire" dans la liste des sessions', 'info');
+                    } else if (this.textContent.trim() !== '') {
+                        showNotification('Date disponible pour formation sur-mesure', 'info');
+                    }
+                });
+                
+                // Ajout de l'interaction clavier pour l'accessibilité
+                if (day.classList.contains('has-session')) {
+                    day.addEventListener('keydown', function(e) {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            showNotification('Cliquez sur "S\'inscrire" dans la liste des sessions', 'info');
+                        }
+                    });
+                }
+            });
+            
+            // Gestion des attributs aria pour les formations filtrées
+            const updateAriaForVisibleCards = () => {
+                formationCards.forEach(card => {
+                    if (card.style.display !== 'none') {
+                        card.setAttribute('aria-hidden', 'false');
+                    } else {
+                        card.setAttribute('aria-hidden', 'true');
+                    }
+                });
+            };
+            
+            // Mettre à jour les attributs ARIA après le filtrage
+            const originalFilterFormations = filterFormations;
+            filterFormations = function(category, searchTerm) {
+                originalFilterFormations(category, searchTerm);
+                setTimeout(updateAriaForVisibleCards, 100);
+            };
+        });
+    </script>
+</body>
+</html>

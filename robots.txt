@@ -1,0 +1,43 @@
+# robots.txt - Academia360° Expert Qualiopi
+# Dernière mise à jour: 2026-01-29
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /services.html
+Allow: /formations.html
+Allow: /contact.html
+Allow: /politique-confidentialite.html
+Allow: /mentions-legales.html
+Allow: /resources/
+
+# Interdire l'indexation des pages techniques
+Disallow: /merci.html
+Disallow: /erreur-404.html
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /*.pdf$  # Décommentez si vous ne voulez pas indexer les PDF
+
+# Crawl-delay pour éviter la surcharge serveur
+Crawl-delay: 10
+
+# Sitemap (essentiel pour le référencement)
+Sitemap: https://academia360.fr/sitemap.xml
+
+# Spécificités pour Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+# Spécificités pour Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 10
+
+# Interdire les bots indésirables (scrapers)
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /

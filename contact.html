@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Optimisé -->
+    <title>Contact - Devis Gratuit Qualiopi | Academia360°</title>
+    <meta name="description" content="Contactez Academia360° pour un devis gratuit sous 24h. Formulaire de contact, coordonnées téléphone/email et FAQ. Accompagnement Qualiopi personnalisé.">
+    
+    <!-- Canonical Corrigé -->
+    <link rel="canonical" href="https://academia360.fr/contact.html">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact - Devis Gratuit Qualiopi | Academia360°">
+    <meta property="og:description" content="Demandez votre devis gratuit pour l'accompagnement Qualiopi. Réponse garantie sous 24h par téléphone ou email.">
+    <meta property="og:url" content="https://academia360.fr/contact.html">
+    <meta property="og:image" content="https://academia360.fr/resources/og-image-contact.jpg">
+    <meta property="og:site_name" content="Academia360° Expert Qualiopi">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact - Devis Gratuit Qualiopi | Academia360°">
+    <meta name="twitter:description" content="Contactez-nous pour un devis gratuit sous 24h. Experts Qualiopi à votre service.">
+    <meta name="twitter:image" content="https://academia360.fr/resources/og-image-contact.jpg">
+    
+    <!-- Fonts avec Optimisation -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org ContactPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "Academia360° Expert Qualiopi",
+            "url": "https://academia360.fr",
+            "logo": "https://academia360.fr/resources/Acasemia360ExpertQualiopi-logo.webp",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+33-6-99-52-44-18",
+                "contactType": "customer service",
+                "availableLanguage": "French",
+                "areaServed": "FR",
+                "hoursAvailable": "Mo-Fr 09:00-18:00"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Lyon",
+                "addressCountry": "FR"
+            },
+            "email": "contact@academia360.fr"
+        }
+    }
+    </script>
+    
+    <!-- Core Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy-blue': '#1a365d',
+                        'blue-light': '#2d5aa0',
+                        'orange-energy': '#ed8936',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        :root {
+            --navy-blue: #1a365d;
+            --blue-light: #2d5aa0;
+            --cream-white: #fafafa;
+            --orange-energy: #ed8936;
+            --gray-light: #718096;
+            --gray-dark: #2d3748;
+            --blue-pale: #e6fffa;
+            --orange-pale: #fff5f5;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--cream-white) 0%, #f7fafc 100%);
+            color: var(--gray-dark);
+            line-height: 1.6;
+        }
+        
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .contact-hero {
+            background: linear-gradient(135deg, var(--navy-blue) 0%, var(--blue-light) 100%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, var(--navy-blue) 0%, var(--orange-energy) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .bg-navy-blue .gradient-text,
+        .contact-hero .gradient-text {
+            background: linear-gradient(135deg, #ffffff 0%, var(--orange-energy) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--navy-blue) 0%, var(--blue-light) 100%);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 24px rgba(26, 54, 93, 0.3);
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(26, 54, 93, 0.4);
+        }
+        
+        .btn-secondary {
+            background: var(--orange-energy);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 8px 24px rgba(237, 137, 54, 0.3);
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(237, 137, 54, 0.4);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--navy-blue);
+            border: 2px solid var(--navy-blue);
+            padding: 14px 30px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-outline:hover {
+            background: var(--navy-blue);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline-white {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 14px 30px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-outline-white:hover {
+            background: white;
+            color: var(--navy-blue);
+            transform: translateY(-2px);
+        }
+        
+        .nav-blur {
+            backdrop-filter: blur(20px);
+            background: rgba(250, 250, 250, 0.95);
+        }
+        
+        .form-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border-left: 6px solid var(--orange-energy);
+        }
+        
+        .form-input {
+            background: var(--cream-white);
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 16px;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--orange-energy);
+            box-shadow: 0 0 0 3px rgba(237, 137, 54, 0.1);
+        }
+        
+        .form-input.error {
+            border-color: #e53e3e;
+            background: #fff5f5;
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: var(--navy-blue);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .error-message {
+            color: #e53e3e;
+            font-size: 14px;
+            margin-top: 0.25rem;
+        }
+        
+        .contact-info-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+        
+        .contact-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--blue-pale);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: var(--navy-blue);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            margin-top: 1rem;
+            color: var(--gray-light);
+            display: none;
+            line-height: 1.6;
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+        
+        .faq-toggle {
+            transition: transform 0.3s ease;
+        }
+        
+        .success-message {
+            background: #f0fff4;
+            border: 2px solid #38a169;
+            color: #22543d;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            display: none;
+        }
+        
+        .success-message.show {
+            display: block;
+            animation: slideIn 0.5s ease;
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Skip to content pour accessibilité */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--navy-blue);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Focus visible pour navigation au clavier */
+        a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+            outline: 3px solid var(--orange-energy);
+            outline-offset: 2px;
+        }
+        
+        /* Notification toast */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 16px 24px;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            z-index: 1000;
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+            max-width: 350px;
+        }
+        
+        .notification.show {
+            transform: translateX(0);
+        }
+        
+        .notification.error {
+            background: #e53e3e;
+        }
+        
+        .notification.info {
+            background: var(--navy-blue);
+        }
+        
+        .mobile-menu {
+            display: none;
+        }
+        
+        .mobile-menu.active {
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .form-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Accessibilité : Skip to content -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- Navigation Standardisée -->
+    <nav class="fixed top-0 left-0 right-0 z-50 nav-blur border-b border-gray-200" role="navigation" aria-label="Navigation principale">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center space-x-3" aria-label="Academia360° - Retour à l'accueil">
+                    <img src="resources/Acasemia360ExpertQualiopi-logo.webp" alt="Logo Academia 360°" class="h-16 md:h-20 w-auto" width="80" height="80" loading="eager">
+                    <span class="font-playfair text-xl md:text-3xl font-bold gradient-text leading-tight">
+                        Academia 360°<br><span class="text-lg md:text-2xl">Expert Qualiopi</span>
+                    </span>
+                </a>
+                
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-navy-blue transition-colors">Accueil</a>
+                    <a href="about.html" class="text-gray-600 hover:text-navy-blue transition-colors">À Propos</a>
+                    <a href="services.html" class="text-gray-600 hover:text-navy-blue transition-colors">Services</a>
+                    <a href="formations.html" class="text-gray-600 hover:text-navy-blue transition-colors">Formations</a>
+                    <a href="contact.html" class="text-navy-blue font-medium border-b-2 border-orange-energy" aria-current="page">Contact</a>
+                    <a href="#devis-form" class="btn-primary text-sm py-3 px-6" onclick="document.getElementById('devis-form').scrollIntoView({behavior: 'smooth'}); return false;">
+                        Devis Gratuit
+                    </a>
+                </div>
+
+                <!-- Bouton Menu Mobile -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-600 hover:text-navy-blue focus:outline-none" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Menu Mobile -->
+            <div id="mobile-menu" class="mobile-menu md:hidden mt-4 pb-4 border-t border-gray-200 pt-4" role="menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-gray-600 hover:text-navy-blue transition-colors py-2">Accueil</a>
+                    <a href="about.html" class="text-gray-600 hover:text-navy-blue transition-colors py-2">À Propos</a>
+                    <a href="services.html" class="text-gray-600 hover:text-navy-blue transition-colors py-2">Services</a>
+                    <a href="formations.html" class="text-gray-600 hover:text-navy-blue transition-colors py-2">Formations</a>
+                    <a href="contact.html" class="text-navy-blue font-medium py-2" aria-current="page">Contact</a>
+                    <a href="#devis-form" class="btn-primary text-center mt-4" onclick="document.getElementById('devis-form').scrollIntoView({behavior: 'smooth'}); return false;">
+                        Devis Gratuit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero pt-28 pb-24 text-white min-h-[730px] flex items-center" aria-labelledby="hero-title">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 id="hero-title" class="font-playfair text-4xl md:text-5xl font-bold mb-6 leading-tight mt-8">
+                        Parlons de votre Projet Qualiopi
+                    </h1>
+                    <p class="text-xl mb-8 text-blue-100 leading-relaxed">
+                        Prêt à démarrer votre démarche de certification ? Contactez-moi pour une consultation gratuite 
+                        et un devis personnalisé selon vos besoins spécifiques.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-4 mb-8">
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-orange-energy mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>Réponse sous 24h garantie</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-orange-energy mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>Devis gratuit et sans engagement</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#devis-form" class="btn-secondary text-center" onclick="document.getElementById('devis-form').scrollIntoView({behavior: 'smooth'}); return false;">
+                            Demander un Devis
+                        </a>
+                        <a href="#phone-number" class="btn-outline-white text-center">
+                            Nous Appeler
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center">
+                    <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-8 w-full max-w-md" role="complementary" aria-label="Nos services en bref">
+                        <h3 class="font-playfair text-2xl font-bold mb-6 text-center">Pourquoi nous contacter ?</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-orange-energy mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Audit Qualiopi complet
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-orange-energy mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Accompagnement personnalisé
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-orange-energy mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Formation des équipes
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-orange-energy mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Questions sur Qualiopi
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-orange-energy mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Devis personnalisé
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <!-- Contact Forms Section -->
+        <section class="py-20 bg-gray-50" aria-labelledby="form-section-title">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 id="form-section-title" class="sr-only">Formulaires de contact</h2>
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Formulaire Devis -->
+                    <div class="form-card" id="devis-form">
+                        <h3 class="font-playfair text-2xl font-bold mb-6 gradient-text">
+                            Demande de Devis Gratuit
+                        </h3>
+                        <p class="text-gray-600 mb-6">
+                            Remplissez ce formulaire pour recevoir un devis personnalisé sous 24h. 
+                            Toutes les informations sont confidentielles.
+                        </p>
+                        
+                        <form name="devis" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleDevisSubmit(event)" aria-label="Formulaire de demande de devis">
+                            <!-- Champ honeypot anti-spam -->
+                            <p class="hidden">
+                                <label>Ne pas remplir : <input name="bot-field" tabindex="-1" /></label>
+                            </p>
+                            
+                            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                <div>
+                                    <label class="form-label" for="devis-nom">Nom *</label>
+                                    <input type="text" id="devis-nom" name="nom" class="form-input" required aria-required="true">
+                                </div>
+                                <div>
+                                    <label class="form-label" for="devis-prenom">Prénom *</label>
+                                    <input type="text" id="devis-prenom" name="prenom" class="form-input" required aria-required="true">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="form-label" for="devis-fonction">Fonction</label>
+                                <input type="text" id="devis-fonction" name="fonction" class="form-input" placeholder="Directeur, Responsable Qualité, etc.">
+                            </div>
+                            
+                            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                <div>
+                                    <label class="form-label" for="devis-email">Email *</label>
+                                    <input type="email" id="devis-email" name="email" class="form-input" required aria-required="true">
+                                </div>
+                                <div>
+                                    <label class="form-label" for="devis-telephone">Téléphone *</label>
+                                    <input type="tel" id="devis-telephone" name="telephone" class="form-input" required aria-required="true">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="form-label" for="devis-organisme">Nom de l'organisme *</label>
+                                <input type="text" id="devis-organisme" name="organisme" class="form-input" required aria-required="true">
+                            </div>
+                            
+                            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                <div>
+                                    <label class="form-label" for="devis-type">Type d'organisme *</label>
+                                    <select id="devis-type" name="type-organisme" class="form-input" required aria-required="true">
+                                        <option value="">Sélectionnez...</option>
+                                        <option value="association">Association</option>
+                                        <option value="entreprise">Entreprise</option>
+                                        <option value="opco">OPCO</option>
+                                        <option value="collectivite">Collectivité</option>
+                                        <option value="ecole">École/Université</option>
+                                        <option value="autre">Autre</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="form-label" for="devis-effectif">Nombre de salariés</label>
+                                    <select id="devis-effectif" name="effectif" class="form-input">
+                                        <option value="">Sélectionnez...</option>
+                                        <option value="1-5">1-5 salariés</option>
+                                        <option value="6-20">6-20 salariés</option>
+                                        <option value="21-50">21-50 salariés</option>
+                                        <option value="51+">51+ salariés</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <fieldset class="mb-4">
+                                <legend class="form-label">Services souhaités *</legend>
+                                <div class="grid grid-cols-2 gap-2 mt-2">
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="checkbox" name="services[]" value="audit" class="mr-2 w-4 h-4 accent-orange-energy">
+                                        <span class="text-sm">Audit Qualiopi</span>
+                                    </label>
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="checkbox" name="services[]" value="accompagnement" class="mr-2 w-4 h-4 accent-orange-energy">
+                                        <span class="text-sm">Accompagnement complet</span>
+                                    </label>
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="checkbox" name="services[]" value="formation" class="mr-2 w-4 h-4 accent-orange-energy">
+                                        <span class="text-sm">Formation des équipes</span>
+                                    </label>
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="checkbox" name="services[]" value="conformite" class="mr-2 w-4 h-4 accent-orange-energy">
+                                        <span class="text-sm">Mise en conformité</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                            
+                            <div class="mb-6">
+                                <label class="form-label" for="devis-message">Description de votre projet</label>
+                                <textarea id="devis-message" name="message" class="form-input" rows="4" placeholder="Décrivez votre projet, vos besoins spécifiques, vos objectifs..."></textarea>
+                            </div>
+                            
+                            <fieldset class="mb-6">
+                                <legend class="form-label">Urgence du projet</legend>
+                                <div class="flex flex-wrap gap-4 mt-2">
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="radio" name="urgence" value="immediate" class="mr-2 w-4 h-4 accent-orange-energy">
+                                        <span class="text-sm">Immédiate (dans le mois)</span>
+                                    </label>
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="radio" name="urgence" value="moyenne" class="mr-2 w-4 h-4 accent-orange-energy">
+                                        <span class="text-sm">Moyenne (2-3 mois)</span>
+                                    </label>
+                                    <label class="flex items-center cursor-pointer">
+                                        <input type="radio" name="urgence" value="faible" class="mr-2 w-4 h-4 accent-orange-energy">
+                                        <span class="text-sm">Faible (+ de 3 mois)</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                            
+                            <button type="submit" class="btn-primary w-full">
+                                Envoyer ma Demande
+                            </button>
+                            
+                            <div class="success-message" id="devis-success" role="status" aria-live="polite">
+                                <strong>Merci !</strong> Votre demande a été envoyée avec succès. 
+                                Je vous répondrai sous 24h avec un devis personnalisé.
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Formulaire Contact -->
+                    <div class="form-card">
+                        <h3 class="font-playfair text-2xl font-bold mb-6 gradient-text">
+                            Contact Général
+                        </h3>
+                        <p class="text-gray-600 mb-6">
+                            Une question ? Besoin d'informations complémentaires ? 
+                            N'hésitez pas à me contacter via ce formulaire.
+                        </p>
+                        
+                        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleContactSubmit(event)" aria-label="Formulaire de contact général">
+                            <!-- Champ honeypot anti-spam -->
+                            <p class="hidden">
+                                <label>Ne pas remplir : <input name="bot-field" tabindex="-1" /></label>
+                            </p>
+                            
+                            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                <div>
+                                    <label class="form-label" for="contact-nom">Nom *</label>
+                                    <input type="text" id="contact-nom" name="nom" class="form-input" required aria-required="true">
+                                </div>
+                                <div>
+                                    <label class="form-label" for="contact-prenom">Prénom *</label>
+                                    <input type="text" id="contact-prenom" name="prenom" class="form-input" required aria-required="true">
+                                </div>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                <div>
+                                    <label class="form-label" for="contact-email">Email *</label>
+                                    <input type="email" id="contact-email" name="email" class="form-input" required aria-required="true">
+                                </div>
+                                <div>
+                                    <label class="form-label" for="contact-telephone">Téléphone</label>
+                                    <input type="tel" id="contact-telephone" name="telephone" class="form-input">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="form-label" for="contact-sujet">Sujet *</label>
+                                <select id="contact-sujet" name="sujet" class="form-input" required aria-required="true">
+                                    <option value="">Sélectionnez...</option>
+                                    <option value="devis">Demande de devis</option>
+                                    <option value="information">Demande d'information</option>
+                                    <option value="formation">Formation</option>
+                                    <option value="partenariat">Partenariat</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label class="form-label" for="contact-message">Message *</label>
+                                <textarea id="contact-message" name="message" class="form-input" rows="5" required aria-required="true" placeholder="Votre message..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary w-full">
+                                Envoyer le Message
+                            </button>
+                            
+                            <div class="success-message" id="contact-success" role="status" aria-live="polite">
+                                <strong>Merci !</strong> Votre message a été envoyé avec succès. 
+                                Je vous répondrai dans les plus brefs délais.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Info Section -->
+        <section class="py-20 bg-white" aria-labelledby="coordonnees-title">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 id="coordonnees-title" class="font-playfair text-4xl md:text-5xl font-bold mb-6 gradient-text">
+                        Nos Coordonnées
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Plusieurs moyens de nous contacter. Choisissez celui qui vous convient le mieux.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="contact-info-card">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg class="w-8 h-8 text-navy-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-playfair text-xl font-bold mb-2">Téléphone</h3>
+                        <p class="text-gray-600 mb-4">Service client disponible du lundi au vendredi</p>
+                        <p class="text-2xl font-bold text-navy-blue" id="phone-number">
+                            <a href="tel:+33699524418" class="hover:text-orange-energy transition-colors">06 99 52 44 18</a>
+                        </p>
+                        <p class="text-sm text-gray-500 mt-2">9h - 18h (heures ouvrables)</p>
+                    </div>
+                    
+                    <div class="contact-info-card">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg class="w-8 h-8 text-navy-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-playfair text-xl font-bold mb-2">Email</h3>
+                        <p class="text-gray-600 mb-4">Pour toute demande ou information complémentaire</p>
+                        <p class="text-lg font-semibold text-navy-blue">
+                            <a href="mailto:contact@academia360.fr" class="hover:text-orange-energy transition-colors">contact@academia360.fr</a>
+                        </p>
+                        <p class="text-sm text-gray-500 mt-2">Réponse sous 24h</p>
+                    </div>
+                    
+                    <div class="contact-info-card">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg class="w-8 h-8 text-navy-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-playfair text-xl font-bold mb-2">Adresse</h3>
+                        <p class="text-gray-600 mb-4">Bureau sur rendez-vous</p>
+                        <address class="text-lg font-semibold text-navy-blue not-italic">
+                            Lyon, France
+                        </address>
+                        <p class="text-sm text-gray-500 mt-2">Déplacements possibles sur site</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-20 bg-gray-50" aria-labelledby="faq-title">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 id="faq-title" class="font-playfair text-4xl md:text-5xl font-bold mb-6 gradient-text">
+                        Questions Fréquentes
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Retrouvez ici les réponses aux questions les plus fréquemment posées 
+                        sur la certification Qualiopi et nos services.
+                    </p>
+                </div>
+                
+                <div class="space-y-4">
+                    <article class="faq-item" onclick="toggleFAQ(this)" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-1">
+                        <div class="faq-question">
+                            <span>Qu'est-ce que la certification Qualiopi ?</span>
+                            <svg class="w-5 h-5 text-gray-400 faq-toggle" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                        <div class="faq-answer" id="faq-answer-1">
+                            Qualiopi est le référentiel national de qualité des actions de formation professionnelle continue. 
+                            Il atteste que votre organisme respecte les critères de qualité exigés par la loi pour pouvoir 
+                            bénéficier des financements publics (CPF, OPCO, etc.).
+                        </div>
+                    </article>
+                    
+                    <article class="faq-item" onclick="toggleFAQ(this)" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-2">
+                        <div class="faq-question">
+                            <span>Combien de temps dure l'accompagnement Qualiopi ?</span>
+                            <svg class="w-5 h-5 text-gray-400 faq-toggle" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                        <div class="faq-answer" id="faq-answer-2">
+                            La durée varie selon votre niveau de maturité qualité. En moyenne, l'accompagnement dure 
+                            entre 2 et 4 mois pour une mise en conformité complète. Les audits rapides peuvent être 
+                            réalisés en 1-2 semaines.
+                        </div>
+                    </article>
+                    
+                    <article class="faq-item" onclick="toggleFAQ(this)" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-3">
+                        <div class="faq-question">
+                            <span>Quel est le coût d'un accompagnement Qualiopi ?</span>
+                            <svg class="w-5 h-5 text-gray-400 faq-toggle" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                        <div class="faq-answer" id="faq-answer-3">
+                            Les tarifs varient selon la taille de votre organisme et les services choisis. 
+                            Un audit complet commence à 1 500€ HT, l'accompagnement complet à 3 000€ HT. 
+                            Je vous établis un devis personnalisé gratuitement.
+                        </div>
+                    </article>
+                    
+                    <article class="faq-item" onclick="toggleFAQ(this)" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-4">
+                        <div class="faq-question">
+                            <span>Quelles sont les chances de réussir l'audit Qualiopi ?</span>
+                            <svg class="w-5 h-5 text-gray-400 faq-toggle" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                        <div class="faq-answer" id="faq-answer-4">
+                            Avec mon accompagnement, vous avez 95% de chances d'obtenir votre certification du premier coup. 
+                            Cette réussite s'explique par ma méthodologie éprouvée et mon suivi personnalisé 
+                            jusqu'à la validation finale de votre certification.
+                        </div>
+                    </article>
+                    
+                    <article class="faq-item" onclick="toggleFAQ(this)" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-5">
+                        <div class="faq-question">
+                            <span>Puis-je suivre les formations à distance ?</span>
+                            <svg class="w-5 h-5 text-gray-400 faq-toggle" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                        <div class="faq-answer" id="faq-answer-5">
+                            Oui, je propose des formations en distanciel interactives avec des sessions pratiques 
+                            et des ateliers collaboratifs. Les formations peuvent également être organisées 
+                            en présentiel dans vos locaux ou dans nos salles de formation.
+                        </div>
+                    </article>
+                    
+                    <article class="faq-item" onclick="toggleFAQ(this)" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-6">
+                        <div class="faq-question">
+                            <span>Quelle est la validité de la certification Qualiopi ?</span>
+                            <svg class="w-5 h-5 text-gray-400 faq-toggle" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                        <div class="faq-answer" id="faq-answer-6">
+                            La certification Qualiopi est valable pour une durée de 3 ans. Un audit de renouvellement 
+                            est nécessaire pour maintenir la certification. Je vous accompagne également dans 
+                            cette démarche de renouvellement.
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- CTA SECTION STANDARDISÉE (Identique aux autres pages) -->
+    <section class="py-20 bg-navy-blue text-white relative overflow-hidden" aria-labelledby="cta-title">
+        <!-- Décorations d'arrière-plan -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none" aria-hidden="true">
+            <div class="absolute top-10 left-10 w-32 h-32 bg-white rounded-full"></div>
+            <div class="absolute bottom-10 right-10 w-48 h-48 bg-orange-energy rounded-full"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <h2 id="cta-title" class="font-playfair text-4xl md:text-5xl font-bold mb-6 gradient-text">
+                Prêt à Démarrer votre Projet Qualiopi ?
+            </h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto text-blue-100">
+                Bénéficiez de mon expertise et de mon accompagnement personnalisé. 
+                Ensemble, nous mettrons en place les conditions de votre succès.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#devis-form" class="btn-secondary" onclick="document.getElementById('devis-form').scrollIntoView({behavior: 'smooth'}); return false;">
+                    Planifier une Consultation
+                </a>
+                <a href="about.html" class="btn-outline-white">
+                    Découvrir mon Expertise
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER STANDARDISÉ (Identique aux autres pages) -->
+    <footer class="bg-gray-800 text-white py-12" role="contentinfo">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="font-playfair text-2xl font-bold mb-4 gradient-text">
+                        Academia 360° Expert Qualiopi
+                    </div>
+                    <p class="text-gray-300 mb-6 max-w-md leading-relaxed">
+                        Spécialiste de l'accompagnement à la certification Qualiopi pour organismes de formation. 
+                        Plus de 15 ans d'expérience dans la formation professionnelle.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://x.com/academia360ex?s=21" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-orange-energy hover:bg-orange-energy hover:text-white transition-all duration-300" aria-label="Twitter (nouvelle fenêtre)">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/academia-360°-lyon/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-orange-energy hover:bg-orange-energy hover:text-white transition-all duration-300" aria-label="LinkedIn (nouvelle fenêtre)">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <nav aria-label="Pied de page - Services">
+                    <h4 class="font-bold text-lg mb-4 text-orange-energy">Services</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="services.html#audit" class="hover:text-white transition-colors flex items-center"><span class="mr-2" aria-hidden="true">→</span>Audit Qualiopi</a></li>
+                        <li><a href="services.html#accompagnement" class="hover:text-white transition-colors flex items-center"><span class="mr-2" aria-hidden="true">→</span>Accompagnement</a></li>
+                        <li><a href="formations.html" class="hover:text-white transition-colors flex items-center"><span class="mr-2" aria-hidden="true">→</span>Formations</a></li>
+                        <li><a href="services.html#conformite" class="hover:text-white transition-colors flex items-center"><span class="mr-2" aria-hidden="true">→</span>Conformité</a></li>
+                    </ul>
+                </nav>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4 text-orange-energy">Contact</h4>
+                    <address class="space-y-3 text-gray-300 not-italic">
+                        <p class="flex items-center"><span class="mr-2" aria-hidden="true">📞</span> <a href="tel:+33699524418" class="hover:text-orange-energy transition-colors">06 99 52 44 18</a></p>
+                        <p class="flex items-center"><span class="mr-2" aria-hidden="true">📧</span> <a href="mailto:contact@academia360.fr" class="hover:text-orange-energy transition-colors">contact@academia360.fr</a></p>
+                        <p class="flex items-center"><span class="mr-2" aria-hidden="true">📍</span> Lyon, France</p>
+                        <p class="text-orange-energy font-semibold mt-4">Disponible 9h-18h</p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Academia360° Expert Qualiopi. Tous droits réservés. | 
+                <a href="mentions-legales.html" class="hover:text-orange-energy transition-colors">Mentions légales</a> | 
+                <a href="politique-confidentialite.html" class="hover:text-orange-energy transition-colors">Politique de confidentialité</a></p>
+                <p class="mt-2 text-gray-500">By Rania.B</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Container -->
+    <div id="notification-container"></div>
+
+    <script src="main.js"></script>
+    <script>
+        // Mobile menu toggle optimisé pour l'accessibilité
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Fermer le menu mobile si on clique en dehors
+        document.addEventListener('click', function(event) {
+            if (!mobileMenu.contains(event.target) && !mobileMenuBtn.contains(event.target) && mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Initialize contact page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate contact info cards
+            const contactCards = document.querySelectorAll('.contact-info-card');
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        anime({
+                            targets: entry.target,
+                            opacity: [0, 1],
+                            translateY: [30, 0],
+                            duration: 600,
+                            easing: 'easeOutExpo'
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            contactCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                observer.observe(card);
+            });
+            
+            // Animate form cards
+            const formCards = document.querySelectorAll('.form-card');
+            formCards.forEach((card, index) => {
+                const cardObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            anime({
+                                targets: entry.target,
+                                opacity: [0, 1],
+                                translateY: [50, 0],
+                                duration: 800,
+                                easing: 'easeOutExpo',
+                                delay: index * 200
+                            });
+                            cardObserver.unobserve(entry.target);
+                        }
+                    });
+                }, observerOptions);
+                
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(50px)';
+                cardObserver.observe(card);
+            });
+            
+            // Gestion clavier pour FAQ
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                item.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        toggleFAQ(this);
+                    }
+                });
+            });
+        });
+        
+        // Notification function
+        function showNotification(message, type = 'info') {
+            const container = document.getElementById('notification-container');
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.textContent = message;
+            
+            container.appendChild(notification);
+            
+            // Trigger animation
+            setTimeout(() => notification.classList.add('show'), 100);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => notification.remove(), 300);
+            }, 3000);
+        }
+        
+        // Fonction utilitaire pour encoder les données du formulaire pour Netlify
+        function encodeFormData(form) {
+            const formData = new FormData(form);
+            const params = new URLSearchParams();
+            
+            for (const [key, value] of formData.entries()) {
+                params.append(key, value);
+            }
+            
+            return params.toString();
+        }
+        
+        function handleDevisSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            
+            // Validation simple
+            const requiredFields = form.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.classList.add('error');
+                    isValid = false;
+                } else {
+                    field.classList.remove('error');
+                }
+            });
+            
+            // Vérifier au moins un service sélectionné
+            const services = form.querySelectorAll('input[name="services[]"]:checked');
+            if (services.length === 0) {
+                showNotification('Veuillez sélectionner au moins un service', 'error');
+                return;
+            }
+            
+            if (!isValid) {
+                showNotification('Veuillez remplir tous les champs obligatoires', 'error');
+                return;
+            }
+            
+            // Envoi réel à Netlify via fetch API
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Envoi en cours...';
+            submitBtn.disabled = true;
+            
+            fetch('/', {
+                method: 'POST',
+                headers: { 
+                    'Content-Type': 'application/x-www-form-urlencoded' 
+                },
+                body: encodeFormData(form)
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Succès !
+                    document.getElementById('devis-success').classList.add('show');
+                    form.reset();
+                    
+                    // Scroll to success message
+                    document.getElementById('devis-success').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                } else {
+                    throw new Error('Erreur réseau');
+                }
+            })
+            .catch(error => {
+                showNotification('Une erreur est survenue lors de l\'envoi. Veuillez réessayer.', 'error');
+                console.error('Erreur:', error);
+            })
+            .finally(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            });
+        }
+        
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            
+            // Validation simple
+            const requiredFields = form.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.classList.add('error');
+                    isValid = false;
+                } else {
+                    field.classList.remove('error');
+                }
+            });
+            
+            if (!isValid) {
+                showNotification('Veuillez remplir tous les champs obligatoires', 'error');
+                return;
+            }
+            
+            // Envoi réel à Netlify via fetch API
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Envoi en cours...';
+            submitBtn.disabled = true;
+            
+            fetch('/', {
+                method: 'POST',
+                headers: { 
+                    'Content-Type': 'application/x-www-form-urlencoded' 
+                },
+                body: encodeFormData(form)
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Succès !
+                    document.getElementById('contact-success').classList.add('show');
+                    form.reset();
+                    
+                    // Scroll to success message
+                    document.getElementById('contact-success').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                } else {
+                    throw new Error('Erreur réseau');
+                }
+            })
+            .catch(error => {
+                showNotification('Une erreur est survenue lors de l\'envoi. Veuillez réessayer.', 'error');
+                console.error('Erreur:', error);
+            })
+            .finally(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            });
+        }
+        
+        function toggleFAQ(element) {
+            const isActive = element.classList.contains('active');
+            const answer = element.querySelector('.faq-answer');
+            
+            // Toggle aria-expanded
+            element.setAttribute('aria-expanded', !isActive);
+            
+            // Close all FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+                item.setAttribute('aria-expanded', 'false');
+            });
+            
+            // Open clicked item if it wasn't active
+            if (!isActive) {
+                element.classList.add('active');
+                element.setAttribute('aria-expanded', 'true');
+            }
+        }
+    </script>
+</body>
+</html>

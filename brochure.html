@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    <title>Télécharger la Brochure Qualiopi | Academia360°</title>
+    <meta name="description" content="Téléchargez gratuitement notre brochure complète sur la certification Qualiopi : méthodologie, tarifs, et guide pratique en PDF.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://academia360.fr/brochure.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Brochure Gratuite - Guide Certification Qualiopi">
+    <meta property="og:description" content="Téléchargez notre guide complet de 24 pages pour réussir votre certification Qualiopi.">
+    <meta property="og:url" content="https://academia360.fr/brochure.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy-blue': '#1a365d',
+                        'blue-light': '#2d5aa0',
+                        'orange-energy': '#ed8936',
+                        'cream-white': '#fafafa',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        :root {
+            --navy-blue: #1a365d;
+            --blue-light: #2d5aa0;
+            --orange-energy: #ed8936;
+            --cream-white: #fafafa;
+            --gray-dark: #2d3748;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--cream-white) 0%, #f7fafc 100%);
+            color: var(--gray-dark);
+        }
+        
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, var(--navy-blue) 0%, var(--orange-energy) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--navy-blue) 0%, var(--blue-light) 100%);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 24px rgba(26, 54, 93, 0.3);
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(26, 54, 93, 0.4);
+        }
+        
+        .btn-secondary {
+            background: var(--orange-energy);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 8px 24px rgba(237, 137, 54, 0.3);
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(237, 137, 54, 0.4);
+        }
+        
+        .nav-blur {
+            backdrop-filter: blur(20px);
+            background: rgba(250, 250, 250, 0.95);
+        }
+        
+        .brochure-hero {
+            background: linear-gradient(135deg, var(--navy-blue) 0%, var(--blue-light) 100%);
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .brochure-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: rgba(237, 137, 54, 0.1);
+            border-radius: 50%;
+        }
+        
+        .brochure-mockup {
+            transform: perspective(1000px) rotateY(-15deg) rotateX(5deg);
+            transition: transform 0.3s ease;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+        
+        .brochure-mockup:hover {
+            transform: perspective(1000px) rotateY(-10deg) rotateX(2deg) scale(1.05);
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 14px 18px;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background: white;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--orange-energy);
+            box-shadow: 0 0 0 4px rgba(237, 137, 54, 0.1);
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #e6fffa 0%, #fff5f5 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        
+        .content-section {
+            background: white;
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 8px 16px;
+            border-radius: 50px;
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            font-size: 14px;
+            margin: 0 8px 8px 0;
+        }
+        
+        .check-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            color: #4a5568;
+        }
+        
+        .check-item svg {
+            color: var(--orange-energy);
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .brochure-mockup {
+                transform: none;
+                margin: 2rem auto;
+                max-width: 250px;
+            }
+            .content-section {
+                padding: 2rem 1.5rem;
+            }
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--navy-blue);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        
+        .skip-link:focus { top: 0; }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 nav-blur border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="resources/Acasemia360ExpertQualiopi-logo.webp" alt="Logo" class="h-16 w-auto">
+                    <span class="font-playfair text-xl md:text-2xl font-bold gradient-text">
+                        Academia 360°<br><span class="text-lg">Expert Qualiopi</span>
+                    </span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-navy-blue">Accueil</a>
+                    <a href="services.html" class="text-gray-600 hover:text-navy-blue">Services</a>
+                    <a href="formations.html" class="text-gray-600 hover:text-navy-blue">Formations</a>
+                    <a href="contact.html" class="btn-primary text-sm py-2 px-6">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="brochure-hero pt-32 pb-16 text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="trust-badge mb-6">
+                        <span class="mr-2">📚</span> Ressource gratuite
+                    </div>
+                    <h1 class="font-playfair text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        Guide Complet :<br>
+                        <span class="text-orange-300">Réussir sa Certification Qualiopi</span>
+                    </h1>
+                    <p class="text-xl text-blue-100 mb-8 leading-relaxed">
+                        Téléchargez notre brochure de 24 pages détaillant notre méthodologie exclusive, 
+                        nos tarifs transparents et des études de cas concrets.
+                    </p>
+                    
+                    <div class="space-y-3 mb-8">
+                        <div class="check-item text-white">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Checklist des 32 critères Qualiopi</span>
+                        </div>
+                        <div class="check-item text-white">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Grille tarifaire détaillée 2025</span>
+                        </div>
+                        <div class="check-item text-white">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>3 études de cas complètes</span>
+                        </div>
+                        <div class="check-item text-white">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Templates de documents exemplaires</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4 text-sm text-blue-200">
+                        <span class="flex items-center"><span class="mr-2">✓</span> PDF HD (2.4 Mo)</span>
+                        <span class="flex items-center"><span class="mr-2">✓</span> Mis à jour janvier 2026</span>
+                        <span class="flex items-center"><span class="mr-2">✓</span> 200+ téléchargements</span>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center">
+                    <div class="brochure-mockup bg-white p-4 rounded-lg shadow-2xl max-w-sm">
+                        <div class="bg-gradient-to-br from-blue-50 to-orange-50 p-8 rounded border-2 border-dashed border-gray-300 text-center">
+                            <div class="text-6xl mb-4">📖</div>
+                            <h3 class="font-playfair text-2xl font-bold text-navy-blue mb-2">Guide Qualiopi 2026</h3>
+                            <p class="text-gray-600 text-sm">Méthodologie & Tarifs</p>
+                            <div class="mt-4 inline-block bg-orange-energy text-white px-4 py-1 rounded-full text-sm font-bold">GRATUIT</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="main-content" class="py-20">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="content-section">
+                <div class="text-center mb-10">
+                    <h2 class="font-playfair text-3xl font-bold mb-4 gradient-text">Recevoir la brochure par email</h2>
+                    <p class="text-gray-600">Remplissez le formulaire ci-dessous pour recevoir immédiatement le PDF</p>
+                </div>
+
+                <form id="brochure-form" class="space-y-6">
+                    <!-- Honeypot anti-spam -->
+                    <div class="hidden" aria-hidden="true">
+                        <input type="text" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="prenom" class="block text-sm font-medium text-gray-700 mb-2">Prénom *</label>
+                            <input type="text" id="prenom" name="prenom" required class="form-input" placeholder="Jean">
+                        </div>
+                        <div>
+                            <label for="nom" class="block text-sm font-medium text-gray-700 mb-2">Nom *</label>
+                            <input type="text" id="nom" name="nom" required class="form-input" placeholder="Dupont">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email professionnel *</label>
+                        <input type="email" id="email" name="email" required class="form-input" placeholder="jean.dupont@organisme.fr">
+                    </div>
+
+                    <div>
+                        <label for="organisme" class="block text-sm font-medium text-gray-700 mb-2">Organisme de formation</label>
+                        <input type="text" id="organisme" name="organisme" class="form-input" placeholder="Nom de votre organisme">
+                    </div>
+
+                    <div>
+                        <label for="telephone" class="block text-sm font-medium text-gray-700 mb-2">Téléphone (optionnel)</label>
+                        <input type="tel" id="telephone" name="telephone" class="form-input" placeholder="06 12 34 56 78">
+                    </div>
+
+                    <div class="flex items-start">
+                        <input type="checkbox" id="consentement" name="consentement" required class="mt-1 h-5 w-5 text-orange-energy rounded border-gray-300 focus:ring-orange-energy">
+                        <label for="consentement" class="ml-3 text-sm text-gray-600">
+                            J'accepte de recevoir la brochure et les informations d'Academia360° concernant la certification Qualiopi. 
+                            <a href="politique-confidentialite.html" class="text-orange-energy hover:underline">Politique de confidentialité</a>.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-secondary w-full text-lg py-4 flex items-center justify-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        Télécharger la brochure maintenant
+                    </button>
+
+                    <p class="text-center text-sm text-gray-500 flex items-center justify-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        Vos données sont sécurisées et ne seront jamais partagées
+                    </p>
+                </form>
+
+                <!-- Message de succès (caché par défaut) -->
+                <div id="success-message" class="hidden text-center py-12">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold mb-4">Brochure envoyée !</h3>
+                    <p class="text-gray-600 mb-6">Vérifiez votre boîte mail (et vos spams). Vous devriez recevoir le PDF sous peu.</p>
+                    <a href="index.html" class="btn-primary inline-block">Retour à l'accueil</a>
+                </div>
+            </div>
+
+            <!-- Ce que vous allez apprendre -->
+            <div class="mt-16 grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="feature-icon mx-auto">
+                        <svg class="w-8 h-8 text-navy-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Méthodologie éprouvée</h3>
+                    <p class="text-gray-600 text-sm">Notre processus en 5 étapes pour obtenir Qualiopi du premier coup.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="feature-icon mx-auto">
+                        <svg class="w-8 h-8 text-navy-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Tarifs transparents</h3>
+                    <p class="text-gray-600 text-sm">Grille tarifaire complète selon la taille de votre organisme.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="feature-icon mx-auto">
+                        <svg class="w-8 h-8 text-navy-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Cas concrets</h3>
+                    <p class="text-gray-600 text-sm">3 études de cas détaillées avec résultats mesurables.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- CTA -->
+    <section class="py-16 bg-navy-blue text-white text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="font-playfair text-3xl font-bold mb-4">Besoin d'un accompagnement personnalisé ?</h2>
+            <p class="text-blue-100 mb-8">Obtenez un devis gratuit sous 24h pour votre projet Qualiopi.</p>
+            <a href="contact.html" class="btn-secondary inline-block">Prendre rendez-vous</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <h3 class="font-playfair text-2xl font-bold mb-4">Academia 360°</h3>
+                    <p class="text-gray-300 mb-4">Expert Qualiopi - Accompagnement à la certification pour organismes de formation.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-orange-energy mb-4">Liens rapides</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="services.html" class="hover:text-white">Services</a></li>
+                        <li><a href="documentation.html" class="hover:text-white">Documentation</a></li>
+                        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-orange-energy mb-4">Contact</h4>
+                    <p class="text-gray-300">📞 06 99 52 44 18</p>
+                    <p class="text-gray-300">📧 contact@academia360.fr</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Academia360°. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('brochure-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Vérification honeypot
+            const honeypot = this.querySelector('input[name="website"]');
+            if (honeypot.value !== '') {
+                console.warn('Spam détecté');
+                return;
+            }
+            
+            // Simulation envoi
+            const btn = this.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = 'Envoi en cours...';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                this.style.display = 'none';
+                document.getElementById('success-message').classList.remove('hidden');
+                // Ici ajouter l'envoi réel vers backend ou email service
+            }, 1500);
+        });
+    </script>
+</body>
+</html>

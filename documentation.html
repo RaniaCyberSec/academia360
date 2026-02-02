@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    <title>Études de Cas & Documentation Qualiopi | Academia360°</title>
+    <meta name="description" content="Découvrez nos études de cas concrets et téléchargez des exemples de documentation Qualiopi : livret d'accueil, fiches de présence, manuels qualité.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://academia360.fr/documentation.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Études de Cas Qualiopi - Exemples de Documentation">
+    <meta property="og:description" content="Cas clients et templates gratuits pour votre certification Qualiopi.">
+    <meta property="og:url" content="https://academia360.fr/documentation.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy-blue': '#1a365d',
+                        'blue-light': '#2d5aa0',
+                        'orange-energy': '#ed8936',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        :root {
+            --navy-blue: #1a365d;
+            --blue-light: #2d5aa0;
+            --orange-energy: #ed8936;
+            --gray-dark: #2d3748;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fafafa;
+            color: var(--gray-dark);
+        }
+        
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, var(--navy-blue) 0%, var(--orange-energy) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--navy-blue) 0%, var(--blue-light) 100%);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(26, 54, 93, 0.3);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--navy-blue);
+            border: 2px solid var(--navy-blue);
+            padding: 12px 26px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-outline:hover {
+            background: var(--navy-blue);
+            color: white;
+        }
+        
+        .nav-blur {
+            backdrop-filter: blur(20px);
+            background: rgba(250, 250, 250, 0.95);
+        }
+        
+        .case-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .case-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+        }
+        
+        .case-header {
+            padding: 2rem;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .case-header.medical { background: linear-gradient(135deg, #1a365d 0%, #2d5aa0 100%); }
+        .case-header.digital { background: linear-gradient(135deg, #ed8936 0%, #dd6b20 100%); }
+        .case-header.cci { background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%); }
+        
+        .doc-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .doc-card:hover {
+            border-color: var(--orange-energy);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .doc-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1rem;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .tag-success { background: #c6f6d5; color: #22543d; }
+        .tag-warning { background: #feebc8; color: #744210; }
+        .tag-info { background: #bee3f8; color: #2a4365; }
+        
+    
+        .result-item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 2rem;
+        }
+        
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 24px;
+            max-width: 800px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(0,0,0,0.1);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            z-index: 10;
+        }
+        
+        .modal-close:hover {
+            background: rgba(0,0,0,0.2);
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--orange-energy);
+            line-height: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .case-card { margin-bottom: 2rem; }
+            .modal { padding: 1rem; }
+        }
+        /* Assurez-vous que les cartes ont ces propriétés */
+        .case-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        /* S'assurer que items-stretch fonctionne avec la grid */
+        .items-stretch {
+            align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 nav-blur border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="resources/Acasemia360ExpertQualiopi-logo.webp" alt="Logo" class="h-16 w-auto">
+                    <span class="font-playfair text-xl md:text-2xl font-bold gradient-text">
+                        Academia 360°<br><span class="text-lg">Expert Qualiopi</span>
+                    </span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-navy-blue">Accueil</a>
+                    <a href="services.html" class="text-gray-600 hover:text-navy-blue">Services</a>
+                    <a href="brochure.html" class="text-gray-600 hover:text-navy-blue">Brochure</a>
+                    <a href="contact.html" class="btn-primary text-sm py-2 px-6">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h1 class="font-playfair text-4xl md:text-5xl font-bold mb-6 gradient-text">
+                Études de Cas & Documentation
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                Découvrez comment nous avons accompagné des organismes comme le vôtre et téléchargez 
+                des exemples concrets de documentation Qualiopi.
+            </p>
+            
+            <!-- Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-12">
+                <div class="stat-card">
+                    <div class="stat-number">95%</div>
+                    <div class="text-sm text-gray-600 mt-2">Taux de réussite</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="text-sm text-gray-600 mt-2">Organismes accompagnés</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4.9/5</div>
+                    <div class="text-sm text-gray-600 mt-2">Satisfaction client</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="text-sm text-gray-600 mt-2">Ans d'expérience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Études de Cas -->
+    <!-- Remplacez la section "Nos Études de Cas" complète par ceci : -->
+
+<section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="font-playfair text-3xl font-bold mb-12 text-center gradient-text">Nos Études de Cas</h2>
+        
+        <div class="grid md:grid-cols-3 gap-8 items-stretch">
+            <!-- Cas 1 : Médical -->
+            <article class="case-card flex flex-col h-full">
+                <div class="case-header medical">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="tag-success">Certification</span>
+                        <span class="text-white/80 text-sm">3 semaines</span>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold mb-1">Centre Médical</h3>
+                    <p class="text-white/90 text-sm">Paris • 45 salariés</p>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <p class="text-gray-600 mb-4 text-sm flex-grow">
+                        Urgence Qualiopi pour continuer les formations financées OPCO. 
+                        Audit dans 3 semaines avec processus inexistants.
+                    </p>
+                    
+                    <!-- CORRECTION : Texte visible avec fond contrasté -->
+                    <div class="space-y-2 mb-6">
+                        <div class="bg-green-50 p-3 rounded-lg border-l-4 border-green-500">
+                            <div class="flex items-center text-green-800 font-semibold text-sm">
+                                <span class="mr-2 text-lg">✓</span>
+                                <span>0 non-conformité majeure</span>
+                            </div>
+                        </div>
+                        <div class="bg-blue-50 p-3 rounded-lg border-l-4 border-blue-500">
+                            <div class="flex items-center text-blue-800 font-semibold text-sm">
+                                <span class="mr-2 text-lg">✓</span>
+                                <span>Certifié du 1er coup</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CORRECTION : mt-auto pousse le bouton en bas -->
+                    <button onclick="openModal('medical')" class="btn-primary w-full text-center mt-auto">
+                        Lire l'étude complète
+                    </button>
+                </div>
+            </article>
+
+            <!-- Cas 2 : Digital -->
+            <article class="case-card flex flex-col h-full">
+                <div class="case-header digital">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="tag-warning">Transformation</span>
+                        <span class="text-white/80 text-sm">6 semaines</span>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold mb-1">EdTech Lyon</h3>
+                    <p class="text-white/90 text-sm">Lyon • 12 formateurs</p>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <p class="text-gray-600 mb-4 text-sm flex-grow">
+                        Start-up EdTech en pleine croissance nécessitant une structuration 
+                        complète de l'ingénierie pédagogique et documentation qualité.
+                    </p>
+                    
+                    <div class="space-y-2 mb-6">
+                        <div class="bg-orange-50 p-3 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-orange-600">+40%</div>
+                            <div class="text-xs text-orange-800">Productivité</div>
+                        </div>
+                    </div>
+                    
+                    <button onclick="openModal('digital')" class="btn-primary w-full text-center mt-auto">
+                        Lire l'étude complète
+                    </button>
+                </div>
+            </article>
+
+            <!-- Cas 3 : CCI -->
+            <article class="case-card flex flex-col h-full">
+                <div class="case-header cci">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="tag-info">Renouvellement</span>
+                        <span class="text-white/80 text-sm">2 semaines</span>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold mb-1">Chambre de Commerce</h3>
+                    <p class="text-white/90 text-sm">Rhône-Alpes • Public</p>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <p class="text-gray-600 mb-4 text-sm flex-grow">
+                        Renouvellement Qualiopi après 4 ans. Mise à jour des référentiels 
+                        et adaptation à la V2 Qualiopi pour un organisme public.
+                    </p>
+                    
+                    <div class="space-y-2 mb-6">
+                        <div class="bg-gray-100 p-3 rounded-lg border-l-4 border-gray-600">
+                            <div class="flex items-center text-gray-800 font-semibold text-sm">
+                                <span class="mr-2 text-lg">✓</span>
+                                <span>Renouvellement 4 ans accordé</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button onclick="openModal('cci')" class="btn-primary w-full text-center mt-auto">
+                        Lire l'étude complète
+                    </button>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+    <!-- Documentation à télécharger -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="font-playfair text-3xl font-bold mb-4 text-center gradient-text">Exemples de Documentation</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Téléchargez ces templates et exemples pour vous inspirer dans la création 
+                de votre propre documentation Qualiopi.
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Doc 1 -->
+                <div class="doc-card">
+                    <div class="doc-icon bg-red-100">📕</div>
+                    <h3 class="font-bold mb-2">Livret d'accueil</h3>
+                    <p class="text-sm text-gray-600 mb-4">Template modifiable selon vos couleurs</p>
+                    <a href="document/ExempleLivret_Accueil_Qualiopi_protected.pdf" download class="btn-outline text-sm w-full block text-center" onclick="trackDownload('livret-accueil')">
+                        Télécharger PDF
+                    </a>
+                </div>
+
+                <!-- Doc 2 -->
+                <div class="doc-card">
+                    <div class="doc-icon bg-blue-100">📅</div>
+                    <h3 class="font-bold mb-2">Planning formation</h3>
+                    <p class="text-sm text-gray-600 mb-4">Exemple de calendrier pédagogique</p>
+                    <a href="document/EXEMPLE Calendrier_pedagogique_Qualiopi_protected.pdf" download class="btn-outline text-sm w-full block text-center" onclick="trackDownload('planning-formation')">
+                        Télécharger PDF
+                    </a>
+                </div>
+
+                <!-- Doc 3 -->
+                <div class="doc-card">
+                    <div class="doc-icon bg-green-100">📝</div>
+                    <h3 class="font-bold mb-2">Fiche de présence</h3>
+                    <p class="text-sm text-gray-600 mb-4">Conforme aux exigences Qualiopi</p>
+                    <a href="document/EXEMPLEFEUILLE PRÉSENCE QUOTIDIENN_protected.pdf" download class="btn-outline text-sm w-full block text-center" onclick="trackDownload('fiche-presence')">
+                        Télécharger PDF
+                    </a>
+                </div>
+
+                <!-- Doc 4 -->
+                <div class="doc-card">
+                    <div class="doc-icon bg-purple-100">✓</div>
+                    <h3 class="font-bold mb-2">Checklist 32 critères</h3>
+                    <p class="text-sm text-gray-600 mb-4">Auto-évaluation détaillée</p>
+                    <a href="document/Resume-critere_protected.pdf" download class="btn-outline text-sm w-full block text-center" onclick="trackDownload('checklist-32-criteres')">
+                        Télécharger PDF
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center p-8 bg-white rounded-2xl shadow-sm border border-gray-200">
+                <p class="text-gray-600 mb-4">Ces documents sont des exemples. Pour une adaptation à votre contexte spécifique :</p>
+                <a href="contact.html" class="btn-primary inline-block">Demander une consultation gratuite</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section class="py-20 bg-navy-blue text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="font-playfair text-3xl font-bold mb-8">Ils nous font confiance</h2>
+            
+            <blockquote class="text-xl italic mb-6 text-blue-100">
+                "Rania a été disponible 24/7 pendant cette période critique. Sa connaissance parfaite 
+                des attentes de l'auditeur a fait toute la différence. Résultat : certifiés du premier coup !"
+            </blockquote>
+            <div class="font-semibold">Marie L.</div>
+            <div class="text-blue-300 text-sm">Directrice, Centre de Formation Médicale</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <h3 class="font-playfair text-2xl font-bold mb-4">Academia 360°</h3>
+                    <p class="text-gray-300">Expert Qualiopi - Accompagnement à la certification.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-orange-energy mb-4">Ressources</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="brochure.html" class="hover:text-white">Brochure</a></li>
+                        <li><a href="documentation.html" class="hover:text-white">Documentation</a></li>
+                        <li><a href="services.html" class="hover:text-white">Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-orange-energy mb-4">Contact</h4>
+                    <p class="text-gray-300">06 99 52 44 18</p>
+                    <p class="text-gray-300">contact@academia360.fr</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Academia360°. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals pour les études de cas -->
+    <div id="modal-medical" class="modal">
+        <div class="modal-content p-8">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="bg-blue-50 p-4 rounded-lg mb-6 inline-block">
+                <span class="text-blue-800 font-semibold text-sm"> Centre médical • 45 salariés • Paris</span>
+            </div>
+            <h2 class="font-playfair text-3xl font-bold mb-6 text-navy-blue">Centre de Formation Médicale</h2>
+            
+            <div class="prose max-w-none">
+                <h3 class="text-xl font-bold mb-3 text-gray-800">Contexte</h3>
+                <p class="text-gray-600 mb-4">Organisme de formation en soins infirmiers avec 45 salariés et 200 stagiaires/an. Urgence absolue car l'organisme risquait de perdre son financement OPCO sans certification Qualiopi rapide.</p>
+                
+                <h3 class="text-xl font-bold mb-3 text-gray-800">Défis majeurs</h3>
+                <ul class="list-disc pl-5 text-gray-600 mb-6 space-y-2">
+                    <li>Aucun processus qualité formalisé</li>
+                    <li>Documentation papier désorganisée</li>
+                    <li>Audit daté dans 3 semaines seulement</li>
+                    <li>Équipe peu sensibilisée aux exigences Qualiopi</li>
+                </ul>
+                
+                <h3 class="text-xl font-bold mb-3 text-gray-800">Solution apportée</h3>
+                <p class="text-gray-600 mb-4">Intervention en "mode commando" sur 3 semaines : structuration express des processus, création du référentiel qualité complet, formation intensive des 5 référents et simulation d'audit blanc 48h avant le jour J.</p>
+                
+                <div class="bg-green-50 border-l-4 border-green-500 p-4 my-6">
+                    <h4 class="font-bold text-green-800 mb-2">Résultats exceptionnels</h4>
+                    <ul class="space-y-1 text-green-700">
+                        <li>✓ Certification obtenue du premier coup</li>
+                        <li>✓ 0 non-conformité majeure</li>
+                        <li>✓ Seulement 2 remarques mineures</li>
+                        <li>✓ Maintien des financements OPCO assuré</li>
+                    </ul>
+                </div>
+                
+                <blockquote class="border-l-4 border-orange-energy pl-4 italic text-gray-600 my-6">
+                    "Rania a été notre sauveuse. Disponible 24/7, elle a su nous préparer efficacement malgré le délai très court."
+                    <footer class="text-sm font-bold mt-2 not-italic">— Marie L., Directrice</footer>
+                </blockquote>
+            </div>
+            
+            <div class="mt-8 pt-6 border-t flex justify-end gap-4">
+                <button onclick="closeModal()" class="btn-outline">Fermer</button>
+                <a href="contact.html" class="btn-primary">Projet similaire ? Contactez-nous</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-digital" class="modal">
+        <div class="modal-content p-8">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <h2 class="font-playfair text-3xl font-bold mb-6 text-navy-blue">Start-up EdTech Lyon</h2>
+            <!-- Contenu similaire pour le cas digital -->
+            <div class="text-center py-8">
+                <p class="text-gray-600">Contenu détaillé disponible sur demande.</p>
+                <a href="contact.html" class="btn-primary mt-4 inline-block">Demander les détails</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-cci" class="modal">
+        <div class="modal-content p-8">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <h2 class="font-playfair text-3xl font-bold mb-6 text-navy-blue">Chambre de Commerce</h2>
+            <!-- Contenu similaire pour le cas CCI -->
+            <div class="text-center py-8">
+                <p class="text-gray-600">Contenu détaillé disponible sur demande.</p>
+                <a href="contact.html" class="btn-primary mt-4 inline-block">Demander les détails</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(type) {
+            document.getElementById('modal-' + type).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal() {
+            document.querySelectorAll('.modal').forEach(m => m.classList.remove('active'));
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Fermer modal si clic en dehors
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                if (e.target === this) closeModal();
+            });
+        });
+        
+        // Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeModal();
+        });
+        
+        function trackDownload(docName) {
+            console.log('Téléchargement:', docName);
+            // Ajouter ici le tracking Google Analytics si nécessaire
+            alert('Téléchargement démarré : ' + docName);
+        }
+    </script>
+</body>
+</html>
